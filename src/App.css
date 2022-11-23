@@ -1,0 +1,158 @@
+@font-face {
+  font-family: GBold;
+  src: url(./Assets/fonts/Gotham-Bold.ttf);
+}
+
+@font-face {
+  font-family: GMedium;
+  src: url(./Assets/fonts/Gotham-Medium.ttf);
+}
+
+@font-face {
+  font-family: MinionsPro;
+  src: url(./Assets/fonts/MinionPro-Regular.otf);
+}
+
+
+.App {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+.divLogo {
+  flex-basis: 100%;
+  text-align: center;
+  margin: 2% 0 5%;
+}
+
+.footer {
+  flex-basis: 100%;
+  height: 15vh;
+}
+
+.siteLogo {
+  width: 35%;
+  height: auto;
+}
+
+.leftContainer {
+  flex-basis: 40%;
+  text-align: center;
+  background-color: rgba(255,255,255,0.7);
+  padding: 2%;
+  box-sizing: border-box;
+  /*border-radius: 15px;*/
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: 'GMedium';
+  color: #79252C;
+}
+
+.leftContainer img {
+  width: 40%;
+  height: auto;
+}
+
+.logoBergasol {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imagesProduits {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rightContainer {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255,255,255,0.7);
+  padding: 2%;
+  box-sizing: border-box;
+  /*border-radius: 15px;*/
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: GMedium;
+  font-size: 25px;
+}
+
+.form {
+  background-color: white;
+  padding: 6%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.rightContainer h3 {
+  font-family: GBold;
+  font-size: 40px;
+  color: #79252c;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #E85505 !important;
+}
+
+button {
+  background-color: #E85505 !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  font-size: 20px !important;
+  border-radius: 10px !important;
+  margin: 10% 0 0 !important;
+}
+
+.dejainscrit {
+  font-family: GMedium;
+  font-size: 15px;
+  color: #ba3939;
+  background: #ffe0e0;
+  border: 1px solid #a33a3a;
+  padding: 2%;
+  margin: 5% 0 0;
+}
+
+/*Responsive Mode */
+
+@media only screen and (max-width: 1100px){
+  .App {
+    display: block;
+  }
+
+  .siteLogo {
+    width: 60%;
+    height: auto;
+  }
+
+  .leftContainer, .rightContainer {
+    width: 80%;
+    margin: auto;
+  }
+
+  .rightContainer {
+    margin-top: 6%;
+    padding: 10%;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .rightContainer {
+    font-size: 18px;
+  }
+  .rightContainer h3 {
+    font-size: 25px;
+    margin-bottom: 15%;
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1100px){
+  .rightContainer h3 {
+    font-size: 40px;
+    margin-bottom: 10%;
+  }
+}
